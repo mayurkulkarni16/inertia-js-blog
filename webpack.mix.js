@@ -18,8 +18,8 @@ mix.js('resources/js/app.js', 'public/js')
         require('tailwindcss'),
         require('autoprefixer'),
     ])
-    .webpackConfig(require('./webpack.config'))
-    .browserSync('localhost:8000');
+    .webpackConfig(require('./webpack.config'));
+    // .browserSync('localhost:8000');
 
 if (mix.inProduction()) {
     mix.version();
